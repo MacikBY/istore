@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Домашняя страница нашего магазина(base){% endblock title %}</title>
+</head>
+<body bgcolor="#cccc99">
+{% include "includes/header.html"  %}
+
+{% block content %}
+{% endblock %}
+
+{% include "includes/footer.html"  %}
+</body>
+</html>

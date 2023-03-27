@@ -1,0 +1,13 @@
+{% extends "less_app/base_template.html" %}
+
+{% block content %}
+    <h1 style="color: white">You are the best</h1>
+    <div>
+        {% for user in users %}
+            <p style="color: white">{{ user.name }}</p>
+        {% endfor %}
+    </div>
+    {% block news %}
+
+    {% endblock %}
+{% endblock %}

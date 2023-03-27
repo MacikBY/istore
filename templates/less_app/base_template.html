@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base template</title>
+</head>
+<body>
+    <div style="width: 80%; margin: 0 auto">
+        <header style="height: 250px; background: cyan; margin-bottom: 10px;">
+            <div style="">Header</div>
+            <input type="button" value="Нажми меня!!!" id="inp">
+        </header>
+
+        <main style="height: 600px; background: blue; margin-bottom: 10px;">
+            <p style="color: yellow">main</p>
+            {% block content %}
+            {% endblock %}
+
+        </main>
+
+        <footer style="height: 300px; background: black; margin-bottom: 10px;">
+            <div>style="">Footer<</div>
+        </footer>
+    </div>
+
+
+<script>
+    let input = document.querySelector('#inp')
+        input.addEventListener('click', fn)
+
+        function fn(){
+            let h = document.querySelector('.header')
+                h.background="red"
+</script>
+</body>
+</html>

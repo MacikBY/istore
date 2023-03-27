@@ -1,0 +1,28 @@
+{% load static %}
+<div><h5>Подвал сайта подключенный через include</h5></div>
+<footer>
+    <hr>
+    <div style="display: flex;">
+        <p>
+        Пожалуйста, напишите свое имя и телефон:
+        </p>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for field in model_form %}
+                <p>{{field}}
+                <span style="color: red;">
+                    {{ field.errors.as_text }}
+                </span>
+                </p>
+            {% endfor %}
+            <button>OK</button>
+        </form>
+    </div>
+            <tr>
+<td colspan="2" align="center"><tt>
+<br><br><br><br><br>
+<hr color="green" size="2" />
+© 2022. Все права защищены. Создатель @BulbaDranik.
+</tt></td>
+</tr>
+</footer>
